@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sidebar {
+  position: fixed;
+  top: 55px;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh !important;
+  z-index: 100;
+  padding: 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}

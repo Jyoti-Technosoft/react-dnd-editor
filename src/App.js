@@ -5,12 +5,8 @@ import Editor from './components/Editor';
 function App() {
   return (
     <div className="App">
-        <div className="header">
           <Header />
-        </div>
-        <div className="container">
-            <Editor />
-        </div>
+          <Editor />
     </div>
   );
 }
