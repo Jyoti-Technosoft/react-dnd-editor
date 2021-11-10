@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './components/Header';
 import Editor from './components/Editor';
-import Tools from './components/Tools';
 
 function App() {
   return (
@@ -10,12 +9,7 @@ function App() {
           <Header />
         </div>
         <div className="container">
-          <div className="tools-sidebar">
-            <Tools />
-          </div>
-          <div className="editor">
             <Editor />
-          </div>
         </div>
     </div>
   );
