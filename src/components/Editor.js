@@ -7,7 +7,6 @@ const Editor = () => {
     const [yPoint, setYPoint] = useState(0);
     const canvasRef = useRef();
     let ctx = null;
-    const canvas = document.createElement("canvas");
 
     const draw = (ctx, frameCount) => {
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
