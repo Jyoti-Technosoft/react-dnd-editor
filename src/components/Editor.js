@@ -21,11 +21,11 @@ const Editor = () => {
         canvasEle.width = canvasEle.clientWidth;
         canvasEle.height = canvasEle.clientHeight;
         ctx = canvasEle.getContext("2d");
-        if(objectType == 'text') {
+        if(objectType === 'text') {
             const r2Info = { x: xPoint, y: yPoint, w: 100, h: 50 };
             drawRect(r2Info);
         }
-        if(objectType == 'square') {
+        if(objectType === 'square') {
             const r4Info = { x: xPoint, y: yPoint, w: 100, h: 50 };
             drawFillRect(r4Info);
         }
@@ -56,9 +56,9 @@ const Editor = () => {
         setYPoint(event.clientY);
     }
 
-    const onDragEnd = (event) => {
-        event.preventDefault();
-    }
+    // const onDragEnd = (event) => {
+    //     event.preventDefault();
+    // }
 
     const onDrop = (event) => {
         event.preventDefault();
